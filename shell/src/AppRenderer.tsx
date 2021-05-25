@@ -66,7 +66,7 @@ const AppRenderer: React.FC<AppRendererProps> = ({ path, app }) => {
       const script = document.getElementById(scriptId);
       if (script) script.parentNode?.removeChild(script);
     };
-  });
+  }, []);
 
   return <div id={insertionNodeId}></div>;
 };
